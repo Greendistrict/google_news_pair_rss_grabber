@@ -1,0 +1,7 @@
+Gathers Yahoo News RSS feeds for every pair of environmental organisations and a list of companies. 
+
+Can fork and edit to change the list of sources.
+
+Can use the ScraperWiki API to get an RSS feed out of it. 
+
+Example: Most recent 50 results, including the term name in the heading: https://api.scraperwiki.com/api/1.0/datastore/sqlite?format=rss2&name=google_news_pair_rss_grabber&query=select%20(term_a%20%7C%7C%20'%2C%20'%20%7C%7C%20term_b%20%7C%7C%20'%3A%20'%20%7C%7C%20title)%20as%20title%2C%20link%2C%20summary_html%20as%20description%2C%20id%20as%20guid%2C%20updated%20as%20pubDate%20from%20%60swdata%60%20order%20by%20updated%20desc%20limit%2050
